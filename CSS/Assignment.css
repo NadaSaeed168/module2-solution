@@ -1,0 +1,72 @@
+h1{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.bigbox{
+    background-color: gray;
+    border: 1px solid black;
+    box-sizing: content-box;
+    width: 480px;
+    float: left;
+    margin-right: 20px;
+    /* position: relative; */
+}
+
+.txt{
+    font-size: 18px;
+    font-weight: 200px;
+    padding-left: 10px;
+}
+
+.smallerbox{
+    float: right;
+    width: 120px;
+    height: 40px;
+    border: 1px solid black;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* position: relative; */
+    /* top: 0px; */
+    /* right: 0px; */
+    /* clear: right; */
+}
+
+#firstbox{
+    background-color: salmon;
+}
+
+#secondbox{
+    background-color: brown;
+}
+
+#thirdbox{
+    background-color: rgb(223, 217, 153);
+}
+
+/* Desktop Screen */
+@media (min-width: 992px){
+    .bigbox{
+        width: 30%;
+    }
+}
+
+/* Teblet Screen */
+@media (min-width: 768px) and (max-width: 991px){
+    .bigbox{
+        width: 40%;
+    }
+    #third{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* Mobile Screen */
+@media (max-width: 767px){
+    .bigbox{
+        width: 100%;
+    }
+}
